@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <!-- META DATA -->
     <meta charset="UTF-8">
@@ -10,28 +11,77 @@
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- ICONS CSS -->
     <link rel="stylesheet" href="fonts/css/all.min.css">
 
     <!-- Tailwind and Daisy UI CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header>
 
+    <style>
+        .font-lato {
+            font-family: 'Lato';
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <!-- Header -->
+    <header class="container mx-auto">
+        <div class="navbar flex-row-reverse lg:flex-row justify-between lg:bg-[#F85559] rounded-[600px] mt-0 lg:mt-5 h-20">
+            <div class="justify-end lg:justify-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content -ml-20 lg:mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                        <li><a class="whitespace-nowrap ">Home</a></li>
+                        <li><a class="whitespace-nowrap ">About Us</a></li>
+                        <li><a class="whitespace-nowrap ">Shop</a></li>
+                        <li><a class="whitespace-nowrap ">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg lg:text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img class="h-10 lg:h-14" src="images/logo.png" alt="">
+                <a class="ml-3 normal-case lg:text-white text-2xl lg:text-3xl font-bold lg:font-extrabold">Fruit Fiesta</a>
+            </div>
+            <div class="hidden lg:flex items-center relative">
+                <input type="text" placeholder="Search here"
+                    class="input input-bordered w-80 max-w-xs mr-5 rounded-3xl" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-10" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
     </header>
+
+    <!-- APP Main -->
     <main>
 
     </main>
+
+    <!-- Footer -->
     <footer>
 
     </footer>
 </body>
+
 </html>
